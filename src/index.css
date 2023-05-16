@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+:root{
+    overflow-x: hidden;
+}
 * {
     padding: 0;
     margin: 0;
@@ -13,4 +15,9 @@ img {
     display: block;
     width: 100%;
     height: 100%;
+    background: white;
+}
+
+.loop {
+    color: rgb(249 115 22);
 }

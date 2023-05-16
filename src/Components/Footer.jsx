@@ -5,7 +5,7 @@ import { facebook, linkedin, instagram, twitter } from "../icons";
 
 const Footer = () => {
     return (
-        <footer className=" bg-black mt-6 relative">
+        <footer className=" bg-black mt-10 xs:mt-6 relative">
             <div className=" absolute h-28 w-24 right-10 top-[-60px] -rotate-[35deg] ">
                 <img
                     className="bg-transparent block w-full h-full "
@@ -24,19 +24,25 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col gap-5 self-center ">
                     <div className="self-center flex gap-5 text-white">
-                        <Link to='#' className="grid place-content-center bg-orange-500 h-[32px] w-[32px] rounded-[50%]">
-                            <img src={facebook} />
+                        <Link
+                            to="#"
+                            className="grid place-content-center bg-orange-500 h-[32px] w-[32px] rounded-[50%]">
+                            <img className=" bg-transparent " src={facebook} />
                         </Link>
-                        <Link to='#' className="grid place-content-center bg-orange-500 h-[32px] w-[32px] rounded-[50%]">
-                            <img src={linkedin} />
+                        <Link
+                            to="#"
+                            className="grid place-content-center bg-orange-500 h-[32px] w-[32px] rounded-[50%] ">
+                            <img className=" bg-transparent " src={linkedin} />
                         </Link>
-                        <Link to='#' className="grid place-content-center bg-orange-500 h-[32px] w-[32px] rounded-[50%]">
-                            <img src={twitter} />
+                        <Link
+                            to="#"
+                            className="grid place-content-center bg-orange-500 h-[32px] w-[32px] rounded-[50%]">
+                            <img className=" bg-transparent " src={twitter} />
                         </Link>
-                        <Link to='#' className="grid place-content-center bg-orange-500 h-[32px] w-[32px] rounded-[50%]">
-                            <img
-                                src={instagram}
-                            />
+                        <Link
+                            to="#"
+                            className="grid place-content-center bg-orange-500 h-[32px] w-[32px] rounded-[50%]">
+                            <img className=" bg-transparent " src={instagram} />
                         </Link>
                     </div>
                     <p>
@@ -44,7 +50,7 @@ const Footer = () => {
                             href="https://iconscout.com/icons/facebook"
                             target="_blank"
                             className=" text-orange-500 hover:underline">
-                            Free Facebook Icon
+                            Free Icons
                         </a>{" "}
                         by{" "}
                         <a
@@ -55,16 +61,20 @@ const Footer = () => {
                         </a>
                     </p>
                 </div>
-                <div className=" relative self-center flex gap-5 before:h-[1px]">
+                <div
+                    className=" w-full relative justify-center flex gap-5 before:h-[1px] before:absolute before:bg-gray-500 before:w-[100vw]
+                before:top-[-5px] after:h-[1px] after:absolute after:bg-gray-500 after:w-[100vw] after:bottom-[-5px]">
                     <Link to={"#"}>Recipes</Link>
                     <Link to={"#"}>Sensations</Link>
                     <Link to={"#"}>Sign in</Link>
                 </div>
-                <div className="flex justify-between ">
-                    <h3>@Copyright 2023</h3>
-                    <div className="flex gap-5">
+                <div className="self-center flex justify-between w-full text-[15px] xs:text-lg">
+                    <h3 className="">@Copyright 2023</h3>
+                    <div className="flex gap-[5px]">
                         <Link to={"#"}>Terms and Condition</Link>
-                        <Link to={"#"}>Privacy Policy</Link>
+                        <Link to={"#"} className="hidden xs:block">
+                            Privacy Policy
+                        </Link>
                     </div>
                 </div>
             </div>
