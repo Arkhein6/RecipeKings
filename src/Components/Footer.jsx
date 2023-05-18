@@ -68,7 +68,7 @@ const Footer = () => {
                     <Link to={"#"}>Sensations</Link>
                     <Link to={"#"}>Sign in</Link>
                 </div>
-                <div className="self-center flex justify-between w-full text-[15px] xs:text-lg">
+                <div className="self-center flex justify-between w-full text-[15px] xs:text-md">
                     <h3 className="">@Copyright 2023</h3>
                     <div className="flex gap-[5px]">
                         <Link to={"#"}>Terms and Condition</Link>

@@ -4,15 +4,15 @@ import abs2 from "../Images/background/abs2.jpg";
 
 const RecipeCard = (props) => {
     return (
-        <div className={` border border-orange-500 rounded-3xl flex flex-col gap-3 p-2 max-w-[300px] `}>
+        <div className={`  flex flex-col  max-w-[300px] `}>
             <div
-                className="rounded-xl bg-gray-200  h-[200px]">
+                className=" border-x border-t border-orange-500 rounded-t-3xl p-2 h-[200px] ">
                 <img
                     className=" rounded-xl mx-auto object-contain"
                     src={props.Image}
                 />
             </div>
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col bg-black text-white gap-1 border border-black px-3 py-4 rounded-b-3xl">
                 <h3 className="font-semibold">{props.Name}</h3>
                 <p>
                     <span className="font-semibold ">Ingredients: </span>

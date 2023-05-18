@@ -9,7 +9,7 @@ const HeroSection = () => {
     return (
         <section className={` h-screen xs:flex justify-center `}>
             <div className="w-full flex justify-between">
-                <div className=" self-center w-[40%] flex flex-col gap-5">
+                <div className=" self-center w-[45%] flex flex-col gap-5">
                     <h2 className="text-xl xs:text-5xl font-semibold ">
                         <Typewriter
                         options={{
@@ -18,7 +18,7 @@ const HeroSection = () => {
                             onInit={(typewriter) => {
                                 typewriter
                                     .typeString(`Welcome to Rec<span class='loop'>i</span>pe<span class='loop'>Kings</span>`)
-                                    .pauseFor(2000)
+                                    .pauseFor(1000)
                                     .deleteAll()
                                     .typeString(
                                         `<span class="loop">Delicious Dishes</span>`
@@ -32,16 +32,16 @@ const HeroSection = () => {
                     </h2>
                     <motion.p
                         initial={{
-                            y: "500%",
+                            x: "-100%",
                             opacity: 0,
                         }}
                         animate={{
                             opacity: 1,
-                            y: 0,
+                            x: 0,
                         }}
                         transition={{
-                            delay: 0.5,
-                            duration: 2,
+                            delay: 14,
+                            duration: 1.5,
                         }}>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Amet veniam molestiae cupiditate voluptatem, dolore
@@ -58,8 +58,8 @@ const HeroSection = () => {
                             y: 0,
                         }}
                         transition={{
-                            delay: 1.5,
-                            duration: 1.5,
+                            delay: 15,
+                            duration: 1,
                         }}>
                         <Link
                             className="bg-orange-500 border-2 w-fit py-3 px-4 rounded-3xl hover:border-2 hover:border-orange-500 hover:bg-white"
@@ -68,7 +68,7 @@ const HeroSection = () => {
                         </Link>
                     </motion.div>
                 </div>
-                <div className="self-center w-[60%] hidden xs:block">
+                <div className="self-center w-[55%] hidden xs:block">
                     <motion.img src={heroImage} />
                 </div>
             </div>

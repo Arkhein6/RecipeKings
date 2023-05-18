@@ -3,6 +3,8 @@ import HeroSection from './HeroSection'
 import {Link} from 'react-router-dom'
 import RecipeCard from './RecipeCard'
 import BlogCard from './BlogCard'
+import bg1 from '../Images/background/new1.png'
+import bg2 from '../Images/background/new2.png'
 import RecipeCircularCard from './RecipeCircularCard'
 import { TrendyRecipeImages,CategoryRecipeImages,blogSectionImages} from '../Images'
 import {motion} from 'framer-motion'
@@ -29,7 +31,7 @@ const MainContent = () => {
 
   return (
       <main className=" mx-auto  w-[90%] flex flex-col lg:gap-[7rem] gap-[5rem] ">
-          <HeroSection /> 
+          <HeroSection />
           <section className="TrendyRecipes flex flex-col gap-7 h-fit">
               <div className="w-full flex justify-between ">
                   <motion.h2
@@ -86,12 +88,12 @@ const MainContent = () => {
               </div>
               <h3 className="self-center text-3xl">Check Our Shop</h3>
               <div className="flex ">
-                  <div className="w-full grid grid-cols-2 lg:flex lg:justify-between sm:grid-cols-3 sm:gap-5 lg:gap-5">
+                  <div className="w-full grid grid-cols-1  gap-5 xs:grid-cols-2 md:grid-cols-3 lg:flex lg:justify-between">
                       {RecipeCircularElements}
                   </div>
               </div>
           </section>
-          <section className='Recipe-Blog'>
+          <section className="Recipe-Blog">
               <div className="flex flex-col gap-5">
                   <div className="w-full flex justify-between ">
                       <motion.h2
@@ -161,23 +163,23 @@ const MainContent = () => {
                   </div>
               </div>
           </section>
-          <section className="NewsLetter border border-red-500">
-              <div className="ml-[10%] border border-green-500 w-fit">
-                  <div className="flex flex-col gap-4 w-fit">
+          <section className="ml-[calc(-5%+-8.23px)] NewsLetter h-[300px] w-screen bg-black ">
+              <div className="ml-[10%] mt-[5%] w-fit">
+                  <div className="flex flex-col gap-4 text-white w-fit">
                       <h1>Subscribe to our NewsLetter</h1>
                       <p>
                           subscribe to our newsletter and receive a 15% discount
                       </p>
-                      <div className="relative w-fit h-[52px]">
+                      <div className="relative text-black w-fit h-[52px]">
                           <input
                               type="text"
-                              className=" block border pl-6 border-zinc-950 h-full w-[190px] rounded-3xl "
+                              className=" block border pl-5 border-zinc-950 h-full w-[100px] sm:w-[190px] rounded-3xl pr-[100px] sm:pr-[105px] "
                               placeholder="yourmail@gmail.com"
                           />
                           <Link
                               to={"#"}
-                              className="bg-orange-500 py-[8px] px-[10px] rounded-3xl
-                    absolute right-2 top-[7px] ">
+                              className="text-[15px] bg-orange-500 py-[8px] px-[8px] sm:px-[10px] rounded-3xl
+                    absolute right-2 top-[8px] ">
                               Subscribe
                           </Link>
                       </div>
@@ -186,7 +188,7 @@ const MainContent = () => {
           </section>
           <section>
               <h3>Featured Recipes</h3>
-              <div className="grid gap-6 grid-cols-1 place-content-between xs:grid-cols-3 ">
+              <div className="grid gap-6 grid-cols-1 place-content-between xs:grid-cols-2 lg:grid-cols-3 ">
                   {FeaturedRecipeElements}
               </div>
           </section>

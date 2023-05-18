@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
 	
 	return (
-        <header className="py-3 sticky top-0 backdrop-blur-xl bg-white/50 z-10 border-b-2 border-gray-200 ">
+        <header className="py-3 sticky top-0 backdrop-blur-lg bg-white/80 z-10 border-b-2 border-gray-200 ">
             <div className="w-[90%] flex justify-between content-center mx-auto">
                 <div className="self-start text-3xl">
                     <h1>Rec<span className="text-orange-500">i</span>pe<span className="text-orange-500">Kings</span></h1>
