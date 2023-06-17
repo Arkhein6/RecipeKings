@@ -16,7 +16,7 @@ const Header = () => {
                     <NavLink className="hover:text-orange-500" to={"#"}>
                         Sensations
                     </NavLink>
-                    <NavLink className="hover:text-orange-500 " to={"#"}>
+                    <NavLink className="hover:text-orange-500 " to={"/account"}>
                         Sign in
                     </NavLink>
                 </div>

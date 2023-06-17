@@ -5,19 +5,20 @@ import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 
 const HeroSection = () => {
-
     return (
-        <section className={` h-screen xs:flex justify-center `}>
+        <section className="h-screen xs:flex justify-center">
             <div className="w-full flex justify-between">
                 <div className=" self-center w-[45%] flex flex-col gap-5">
                     <h2 className="text-xl xs:text-5xl font-semibold ">
                         <Typewriter
-                        options={{
-                             autoStart:true,
-                        }}
+                            options={{
+                                autoStart: true,
+                            }}
                             onInit={(typewriter) => {
                                 typewriter
-                                    .typeString(`Welcome to Rec<span class='loop'>i</span>pe<span class='loop'>Kings</span>`)
+                                    .typeString(
+                                        `Welcome to </br> Rec<span class='loop'>i</span>pe<span class='loop'>Kings</span>`
+                                    )
                                     .pauseFor(1000)
                                     .deleteAll()
                                     .typeString(
@@ -26,7 +27,6 @@ const HeroSection = () => {
                                     .pauseFor(1000)
                                     .typeString("<br>for Food Lovers.")
                                     .start();
-
                             }}
                         />
                     </h2>
@@ -68,8 +68,8 @@ const HeroSection = () => {
                         </Link>
                     </motion.div>
                 </div>
-                <div className="self-center w-[55%] hidden xs:block">
-                    <motion.img src={heroImage} />
+                <div className="self-center w-[55%] h-full hidden xs:block ">
+                    <img src={heroImage} /> 
                 </div>
             </div>
         </section>
