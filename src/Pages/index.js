@@ -1,11 +1,4 @@
-import Homepage from './Homepage'
-import Recipes from './Recipes'
-import Account from "./Account";
+import Homepage from "./Homepage";
+import Recipes from "./Recipes";
 
-
-
-export {
-    Homepage,
-    Recipes,
-    Account
-}
+export { Homepage, Recipes};

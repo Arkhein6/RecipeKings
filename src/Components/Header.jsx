@@ -16,7 +16,10 @@ const Header = () => {
                     <NavLink className="hover:text-orange-500" to={"#"}>
                         Sensations
                     </NavLink>
-                    <NavLink className="hover:text-orange-500 " to={"/account"}>
+                    <NavLink className="hover:text-orange-500 " onClick={() => {
+                        const account_modal = document.getElementById("account_modal")
+                        account_modal.showModal()
+                    }}>
                         Sign in
                     </NavLink>
                 </div>

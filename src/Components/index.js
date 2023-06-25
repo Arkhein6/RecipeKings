@@ -5,6 +5,7 @@ import HeroSection from './HeroSection'
 import MainContent from './MainContent'
 import RecipeCircularCard from './RecipeCircularCard'
 import BlogCard from './BlogCard'
+import Account from './Account'
 
 export {
     Header,
@@ -13,5 +14,6 @@ export {
     MainContent,
     RecipeCard,
     RecipeCircularCard,
-    BlogCard
+    BlogCard,
+    Account
 }

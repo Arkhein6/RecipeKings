@@ -1,14 +1,35 @@
-import React from 'react'
-import { Header , Footer, MainContent} from '../Components'
+import React from "react";
+import { Header, Footer, MainContent } from "../Components";
+import Account from "../Components/Account";
 
 const Homepage = () => {
-  return (
-    <>
-        <Header />
-        <MainContent />
-        <Footer />
-    </>
-  )
-}
+    React.useEffect(() => {
+        setTimeout(() => {
+            const get_accountmodal = document.getElementById("account_modal");
+            get_accountmodal.showModal();
+            get_accountmodal.addEventListener("click", (e) => {
+                const dialogDimensions =
+                    get_accountmodal.getBoundingClientRect();
+                if (
+                    e.clientX < dialogDimensions.left ||
+                    e.clientX > dialogDimensions.right ||
+                    e.clientY < dialogDimensions.top ||
+                    e.clientY > dialogDimensions.bottom
+                ) {
+                    get_accountmodal.close();
+                }
+            });
+        }, 5000);
+    });
 
-export default Homepage
+    return (
+        <>
+            <Account />
+            <Header />
+            <MainContent />
+            <Footer />
+        </>
+    );
+};
+
+export default Homepage;
