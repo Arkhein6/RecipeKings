@@ -58,7 +58,7 @@ const MainContent = () => {
     });
 
     return (
-        <main className=" mx-auto  w-[90%] flex flex-col lg:gap-[7rem] gap-[5rem] ">
+        <main className=" mx-auto mb-[6rem] w-[90%] flex flex-col lg:gap-[7rem] gap-[5rem] ">
             <HeroSection />
             <section className="TrendyRecipes flex flex-col gap-7 h-fit">
                 <div className="w-full flex justify-between ">
@@ -191,9 +191,9 @@ const MainContent = () => {
                     </div>
                 </div>
             </section>
-            <section className="ml-[calc(-5%+-8.23px)] NewsLetter h-[300px] w-screen bg-black ">
+            <section className="ml-[calc(-5%+-8.23px)] NewsLetter h-[300px] w-screen  ">
                 <div className="ml-[10%] mt-[5%] w-fit">
-                    <div className="flex flex-col gap-4 text-white w-fit">
+                    <div className="flex flex-col gap-4  w-fit">
                         <h1>Subscribe to our NewsLetter</h1>
                         <p>
                             subscribe to our newsletter and receive a 15%

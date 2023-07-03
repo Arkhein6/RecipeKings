@@ -69,7 +69,7 @@ const HeroSection = () => {
                     </motion.div>
                 </div>
                 <div className="self-center w-[55%] h-full hidden xs:block ">
-                    <img src={heroImage} /> 
+                    <img src={heroImage} />
                 </div>
             </div>
         </section>

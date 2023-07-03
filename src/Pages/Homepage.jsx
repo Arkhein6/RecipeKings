@@ -19,7 +19,7 @@ const Homepage = () => {
                     get_accountmodal.close();
                 }
             });
-        }, 5000);
+        }, 10000);
     });
 
     return (

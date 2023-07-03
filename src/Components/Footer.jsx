@@ -5,14 +5,14 @@ import { facebook, linkedin, instagram, twitter } from "../icons";
 
 const Footer = () => {
     return (
-        <footer className=" bg-black mt-10 xs:mt-6 relative">
+        <footer className=" bg-gray-100 xs:mt-6 relative">
             <div className=" absolute h-28 w-24 right-10 top-[-60px] -rotate-[35deg] ">
                 <img
                     className="bg-transparent block w-full h-full "
                     src={pepper}
                 />
             </div>
-            <div className="py-3 flex w-[90%] flex-col text-white justify-center content-center mr-auto ml-auto gap-5">
+            <div className="py-3 flex w-[90%] flex-col justify-center content-center mr-auto ml-auto gap-5">
                 <div className="self-center">
                     <h1>Recipe Kings</h1>
                 </div>
@@ -23,7 +23,7 @@ const Footer = () => {
                     </p>
                 </div>
                 <div className="flex flex-col gap-5 self-center ">
-                    <div className="self-center flex gap-5 text-white">
+                    <div className="self-center flex gap-5">
                         <Link
                             to="#"
                             className="grid place-content-center bg-orange-500 h-[32px] w-[32px] rounded-[50%]">

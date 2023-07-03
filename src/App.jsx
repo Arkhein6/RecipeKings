@@ -1,5 +1,5 @@
 import React from 'react'
-import { Homepage,Recipes,Account } from './Pages'
+import { Homepage,Recipes } from './Pages'
 import {
 	createBrowserRouter,
 	RouterProvider
@@ -16,10 +16,7 @@ const router = createBrowserRouter([
         path:'/recipes',
         element: <Recipes />
     },
-    {
-        path:'/account',
-        element: <Account />
-    }
+    
     ]
         
 );

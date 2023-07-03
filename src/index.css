@@ -22,4 +22,8 @@ img {
 .loop {
     color: rgb(249 115 22);
 }
-
+.NewsLetter {
+ 
+    background-image: url('./src/Images/newsletter2.png');
+    background-position: center;
+}
