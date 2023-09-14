@@ -23,7 +23,6 @@ img {
     color: rgb(249 115 22);
 }
 .NewsLetter {
- 
-    background-image: url('./src/Images/newsletter2.png');
+    background-image: url('./src/Images/newsletter.png');
     background-position: center;
 }

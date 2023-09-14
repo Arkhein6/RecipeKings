@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import pepper from "../Images/Leonardo_Diffusion_a_single_red_ultra_realistic_chilli_pepper_0-removebg-preview.png";
+import pepper from "../Images/Pepper.png";
 import { facebook, linkedin, instagram, twitter } from "../icons";
 
 const Footer = () => {

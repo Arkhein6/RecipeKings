@@ -1,6 +1,4 @@
 import React from "react";
-import abs1 from "../Images/background/abs1.jpg";
-import abs2 from "../Images/background/abs2.jpg";
 
 const RecipeCard = (props) => {
     return (

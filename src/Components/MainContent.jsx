@@ -3,8 +3,6 @@ import HeroSection from "./HeroSection";
 import { Link } from "react-router-dom";
 import RecipeCard from "./RecipeCard";
 import BlogCard from "./BlogCard";
-import bg1 from "../Images/background/new1.png";
-import bg2 from "../Images/background/new2.png";
 import RecipeCircularCard from "./RecipeCircularCard";
 import {
     TrendyRecipeImages,
@@ -12,8 +10,8 @@ import {
     blogSectionImages,
 } from "../Images";
 import { motion } from "framer-motion";
-import pepper from "../Images/Leonardo_Diffusion_a_single_red_ultra_realistic_chilli_pepper_0-removebg-preview.png";
-import pexels17 from "../Images/background/pexels18.jpg";
+import pepper from "../Images/Pepper.png";
+import pexels17 from "../Images/Pexels18.jpg";
 
 const MainContent = () => {
     const [trendyRecipes, setTrendyRecipes] =
